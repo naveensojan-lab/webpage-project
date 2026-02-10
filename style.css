@@ -36,7 +36,7 @@ body {
 }
 
 .logo {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   color: #b7ff00;
   letter-spacing: 1px;
@@ -71,26 +71,6 @@ body {
   width: 100%;
 }
 
-/* Hire button */
-.hire-btn {
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-
-  background: #b7ff00;
-  color: black;
-
-  transition: 0.3s;
-  box-shadow: 0px 0px 15px rgba(183, 255, 0, 0.35);
-}
-
-.hire-btn:hover {
-  transform: scale(1.05);
-  background: #d4ff55;
-}
-
 /* ===========================
    HERO SECTION
 =========================== */
@@ -119,10 +99,9 @@ body {
 }
 
 .hero-overlay h1 {
-  font-size: 62px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 1.2;
-  color: white;
 }
 
 .hero-overlay h1 span {
@@ -131,11 +110,12 @@ body {
 
 .hero-overlay p {
   margin-top: 14px;
-  font-size: 18px;
+  font-size: 17px;
   color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
 }
 
-/* Buttons container */
+/* Buttons */
 .hero-buttons {
   margin-top: 30px;
   display: flex;
@@ -150,7 +130,6 @@ body {
   font-weight: 600;
   text-decoration: none;
   border-radius: 10px;
-
   transition: 0.3s;
   box-shadow: 0px 0px 18px rgba(183, 255, 0, 0.35);
 }
@@ -175,47 +154,18 @@ body {
   transform: scale(1.05);
 }
 
-/* Hero Tags */
-.hero-tags {
-  margin-top: 35px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-
-.hero-tags span {
-  padding: 10px 18px;
-  border-radius: 25px;
-  font-size: 13px;
-  font-weight: 500;
-
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: rgba(255, 255, 255, 0.75);
-
-  transition: 0.3s;
-}
-
-.hero-tags span:hover {
-  border: 1px solid rgba(183, 255, 0, 0.6);
-  color: #b7ff00;
-  transform: scale(1.05);
-}
-
 /* ===========================
-   PROJECTS SECTION
+   SECTION COMMON
 =========================== */
-.projects {
-  padding: 70px;
+section {
+  padding: 80px 70px;
   text-align: center;
 }
 
-.projects h2 {
+section h2 {
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 2px;
-  color: white;
 }
 
 .line {
@@ -226,16 +176,19 @@ body {
   border-radius: 10px;
 }
 
-/* Grid */
-.grid {
+/* ===========================
+   SKILLS SECTION
+=========================== */
+.skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-/* Card redesign */
-.card {
-  padding: 28px;
+.skill-card {
+  padding: 30px;
   border-radius: 16px;
   text-align: left;
 
@@ -246,69 +199,34 @@ body {
   transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-10px);
+.skill-card:hover {
+  transform: translateY(-8px);
   border: 1px solid rgba(183, 255, 0, 0.45);
   box-shadow: 0px 0px 25px rgba(183, 255, 0, 0.18);
 }
 
-.card h3 {
-  font-size: 20px;
+.skill-card h3 {
+  font-size: 18px;
   font-weight: 600;
   color: #b7ff00;
 }
 
-.card p {
+.skill-card p {
   margin-top: 10px;
   font-size: 14px;
-  line-height: 1.6;
+  line-height: 1.7;
   color: rgba(255, 255, 255, 0.65);
-}
-
-/* Card tags */
-.card-tags {
-  margin-top: 18px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.card-tags span {
-  padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 500;
-
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-
-  color: rgba(255, 255, 255, 0.7);
-  transition: 0.3s;
-}
-
-.card-tags span:hover {
-  border: 1px solid rgba(183, 255, 0, 0.7);
-  color: #b7ff00;
 }
 
 /* ===========================
    ABOUT SECTION
 =========================== */
 .about {
-  padding: 70px;
-  text-align: center;
   background: linear-gradient(to bottom, #05070a, #0b0f14);
-}
-
-.about h2 {
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 
 .about-box {
   margin: auto;
-  margin-top: 35px;
   max-width: 850px;
   padding: 40px;
 
@@ -323,7 +241,7 @@ body {
 .about-box p {
   font-size: 15px;
   line-height: 1.8;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .about-tags {
@@ -355,17 +273,6 @@ body {
 /* ===========================
    CONTACT SECTION
 =========================== */
-.contact {
-  padding: 70px;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 26px;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
 .contact form {
   max-width: 650px;
   margin: auto;
@@ -443,8 +350,8 @@ body {
    RESPONSIVE
 =========================== */
 @media (max-width: 950px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 
   .hero-overlay h1 {
@@ -462,18 +369,8 @@ body {
     margin-top: 12px;
   }
 
-  .hire-btn {
-    margin-top: 15px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .projects,
-  .contact,
-  .about {
-    padding: 40px 20px;
+  section {
+    padding: 50px 20px;
   }
 
   .hero-overlay {
